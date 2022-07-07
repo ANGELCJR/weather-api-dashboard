@@ -110,10 +110,10 @@ function handleSearchFormSubmit(event) {
     searchApi(searchInputVal);
   }
 
-function loadCityList(cityList) {  //function to load the text from memory
+function loadCityList(cityList) {  
     cityList = JSON.parse(localStorage.getItem("cityList"));
-    if(!cityList) {  //check to see if the variable exists
-        console.log("- No saved information"); //prints error message in console
+    if(!cityList) {  
+        console.log("- No saved information"); 
         cityList=[];
         return cityList;
     }
@@ -122,4 +122,12 @@ function loadCityList(cityList) {  //function to load the text from memory
 searchFormEl.addEventListener('submit', handleSearchFormSubmit);
 
 cityList = loadCityList(cityList);
+searchApi("New York");
+searchApi("Atlanta");
+searchApi("Austin");
+searchApi("Chicago");
+searchApi("Orlando");
+searchApi("San Francisco");
 searchApi("Seattle");
+searchApi("Denver");
+
