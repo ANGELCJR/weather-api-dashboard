@@ -1,4 +1,4 @@
-# weather-api-dashboard
+# Weather-Api-Dashboard
 
 
 # Description
